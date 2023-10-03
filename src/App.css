@@ -1,0 +1,1224 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Apps {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Apps-header {
+  background-color: #0a0f56;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Component */
+.header{
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+.header img{
+  margin-left: 48px;
+  width: 50px;
+  object-fit: contain;
+}
+
+/* Header component ends here */
+
+
+/* Sidebar  Component*/
+
+ .t{
+  width: 73%;
+  margin: auto;
+  margin-bottom: 30px;
+  position: absolute;
+  z-index: 1000000;
+  top: 0;
+
+}
+
+.side{
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  padding: 30px 0;
+  position: relative;
+  z-index: 10000;
+  height: 100vh;
+  border-radius: 0 0 100px 0;
+}
+
+
+
+.side .bar{
+  width: 78%;
+  margin: auto;
+  display: flex;
+  color: #FFFFFF;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.side .bar .icon {
+  background-color: #000;
+  color: #fff;
+  font-size: 28px;
+}
+
+.side .bar .text{
+  font-weight: 700;
+  font-size: 19px;
+  margin-left: 18px;
+}
+.side .active .icon{
+  color: #FFA628;
+}
+.side .active .text{
+  color: #FFA628;
+}
+/* Sidebar  Component ends here*/
+
+
+/* SearchInput component starts here */
+
+.search{
+  width: 48%;
+  background-color: white;
+  padding-left: 8px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+ .search input{
+  height: 100%;
+  width: 80%;
+  border: none;
+  margin-left: 5px;
+}
+
+/* SearchInput component ends here */
+
+/* Filter component starts here */
+
+.filter{
+  width: 25%;
+  background-color: #fff;
+  height: 40px;
+  padding: 0 8px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter div{
+  display: flex;
+  align-items: center;
+}
+.filter div p{
+  margin-left: 4px;
+  font-size: 14px;
+}
+.filter select{
+  border: none;
+  height: 100%;
+}
+
+/* Filter component starts here */
+
+
+
+/* SIGN IN HTML */
+a{
+  text-decoration: none;
+}
+.sign{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sign .sign-c{
+  width: 70%;
+  margin: auto;
+  /* height: 90%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign .sign-c .sign-img{
+  width: 42%;
+  height: 100%;
+}
+.sign .sign-c .sign-img img{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.sign .sign-c .form-c{
+  width: 50%;
+  background: #FFA628;
+  border-radius: 20px;
+  padding: 1rem 0;
+}
+.sign .sign-c .form-c form{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.sign .sign-c .form-c form h2{
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1A144A;
+
+}
+.sign .sign-c .form-c form p {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  margin: auto;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+
+
+}
+.input-f{
+  width: 95%;
+  margin: auto;
+  padding: 0 10px;
+  border-radius: 8px;
+  height: 38px;
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select{
+  text-align: center;
+  margin-top: 20px;
+}
+ .input-f .input{
+  border: none;
+  outline: none;
+  width: 95%;
+  background-color: transparent;
+}
+ .input-f img {
+  width: 15px;
+  height: 15px;
+}
+
+
+
+.sign .sign-c .form-c .forgot{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign .sign-c .form-c .forgot .radio{
+  color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  text-align: start;
+}
+.sign .sign-c .form-c .forgot span{
+  color: #000;
+  text-align: end;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sign .sign-c .form-c form .sub-btn{
+  background: #1A144A;
+  border-radius: 20px;
+  height: 40px;
+  color: #fff;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.sign .sign-c .form-c form .up{
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+}
+.sign .sign-c .form-c form .dont {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* FORGOT PASSWORD  */
+
+.forgot-c {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 98vh;
+}
+
+.forgot-c .f-img {
+  width: 60%;
+  height: 100%;
+}
+
+.forgot-c .f-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.forgot-c .f-form {
+  width: 40%;
+  /* margin-top: 4rem; */
+}
+
+.forgot-c .f-form form {
+  width: 90%;
+  background-color: #FFA628;
+  height: auto;
+  padding: 1rem 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.forgot-c .f-form form h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.forgot-c .f-form form p {
+  font-weight: 500;
+  font-size: 15.5px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.forgot-c .f-form form .email-input {
+  width: 85%;
+  margin: auto;
+  text-align: start;
+}
+
+.forgot-c .f-form form .email-input label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 12px;
+}
+
+.forgot-c .f-form form .email-input input {
+  width: 100%;
+  height: 63px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.forgot-c .f-form form .f-send{
+  width: 45%;
+  height: 45px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 15px;
+  background: #1A144A;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* CHANGE PASSWORD */
+.forgot-c .f-form .change{
+  padding-bottom: 35px;
+}
+.forgot-c .f-form .change .input-f{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+/* ADMIN DASHBOARD */
+.admin{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  
+}
+
+.admin .dk{
+  width: 100%;
+  height: 90px;
+}
+.admin .brand{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 3%;
+}
+.admin .poly{
+  position: absolute;
+  width: 30%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.admin .hello {
+  position: absolute;
+  width: 18%;
+  top: 0;
+  height: 35vh;
+  display: grid;
+  place-items: center;
+  left: 0;
+  z-index: 4;
+}
+.admin .hello h5{
+  font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+.admin .hello h4 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.admin .a-dash {
+  background-image: url(../src/Images/h-logo.png);
+  width: 100%;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-top: -.6vh;
+  padding-bottom: 40px;
+}
+
+.admin .a-dash .dc{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: .2;
+}
+.admin .a-dash .dash{
+  width: 80%;
+  margin-left: auto;
+}
+
+.admin .a-dash .dash-c{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+ height: 100px;
+ align-items: end;
+}
+
+.admin .a-dash .dash-c .search{
+  height: 45px;
+  width: 48%;
+  z-index: 111;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 15px;
+
+}
+.admin .a-dash .dash-c .search img{
+  width: 17px;
+}
+.admin .a-dash .dash-c .search input{
+  height: 100%;
+  width: 90%;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+.admin .a-dash .dash-c .notification{
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.admin .a-dash .dash-c .notification img{
+  width: 30%;
+}
+
+/* cards */
+.admin .cards{
+  padding-top: 80px;
+  width: 92%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.admin .cards .card1{
+  width: 85%;
+  height: 120px;
+  background: #FFFFFF;
+  color: #000;
+  border-radius: 15px;
+  z-index: 12222222222;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.cards .card1 img{
+  width: 20%;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+}
+.cards .card1 p{
+  font-weight: 500;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+.cards .card1 h2{
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0;
+    margin: 0;
+}
+
+/* TEACHER SCREEN */
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: url(./Images/h-logo.png);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.content .dark{
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, .1);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+.content .right-content{
+  width: 75%;
+  position: relative;
+  z-index: 100;
+}
+
+.content .right-content .top{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content .right-content .top .top1{
+  width: 15%;
+  position: relative;
+  z-index: 100;
+}
+.content .right-content .top .top1 p{
+ font-size: 20px;
+ font-weight: 600;
+ margin: auto;
+ margin-bottom: 10px;
+}
+
+
+
+.content .right-content .top .top3{
+  width: 20%;
+  background-color: #fff;
+  height: 40px;
+  padding: 0 8px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .right-content .top .top3 div{
+  display: flex;
+  align-items: center;
+}
+.content .right-content .top .top3 div p{
+  margin-left: 4px;
+  font-size: 14px;
+}
+.content .right-content .top .top3 select{
+  border: none;
+  height: 100%;
+}
+
+.content .right-content .add{
+  width: 90%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+}
+
+.content .right-content .add button{
+  background-color: #1A144A;
+  color: #fff;
+  width: fit-content;
+  padding: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.content .right-content .employee{
+  width: 95%;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.content .right-content .employee h2{
+  margin: auto;
+  font-size: 26px;
+  width: fit-content;
+  position: relative;
+}
+.content .right-content .employee h2::after{
+  margin: auto;
+  position: absolute;
+  content: '';
+  background-color: #FFA628;
+  height: 4px;
+  width: 45px;
+  bottom: -7px;
+  left: 0;
+}
+.content .right-content .cards{
+  margin-top: 0;
+  padding: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.content .right-content .cards .card{
+  width: 90%;
+  border-radius: 15px;
+  background-color: #FFA628;
+  padding: 16px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.content .right-content .cards .card .edit{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.content .right-content .cards .card img{
+  width: 80px;
+  margin-bottom: 5px;
+  margin: auto;
+}
+
+.content .right-content .cards .card h3{
+  margin-bottom: 4px;
+}
+
+.content .right-content .cards .card p{
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+.content .right-content .cards .card .white-bg{
+  width: 80%;
+  margin: auto;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: start;
+
+}
+
+.content .right-content .cards .card .white-bg p{
+  margin: 0;
+  font-size: 14px;
+}
+
+.content .right-content .cards .card .white-bg h5{
+  margin-bottom: 8px;
+  width: 95%;
+}
+
+.content .right-content .employee h4{
+  text-align: end;
+}
+
+
+/* TEACHER FORM MODAL */
+
+.e-form{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.e-form .e-form1{
+  background-color: #FFA628;
+  height: auto;
+  padding: 5px 0 30px 0;
+  width: 70%;
+  border-radius: 20px;
+}
+.e-form .e-form1 h4{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.e-form .e-form1 .close{
+  display: flex;
+  justify-content: end;
+}
+.e-form .e-form1 .close button{
+  margin: 0px 20px 0 0;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: #FFA628;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.e-form .e-form1 form{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.e-form .e-form1 .add-submit{
+  width: 50%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: #1A144A;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* TEACHER EDIT MODAL */
+
+.e-form .edit{
+  width: 45%;
+}
+
+form .edit-details{
+  width: 90%;
+  margin: auto;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+form .edit-details label{
+  width: 90%;
+  text-align: start;
+  font-size: 17px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form .edit-details input{
+  width: 80%;
+  padding-left: 7px;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  margin-left: 5%;
+  
+}
+
+form .edit-details select{
+  width: 80%;
+  padding-left: 7px;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  margin-left: 5%;
+}
+
+
+
+
+/* TEACHER FORM */
+.teacher-form{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.teacher-form .input-cont{
+  width: 50%;
+}
+
+.teacher-form .input-cont p{
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.teacher-form .input-cont input{
+  width: 90%;
+  height: 45px;
+  border-radius: 15px;
+  background: #D9D9D9;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.teacher-form .input-cont select{
+  width: 90%;
+  height: 45px;
+  border-radius: 15px;
+  background: #D9D9D9;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  outline: none;
+}
+
+
+.teacher-form .input-cont .file{
+  height: 40px;
+  padding-top: 5px;
+  align-items: center;
+}
+
+/* Teacher ends here */
+
+
+
+/* Schedule starts here */
+
+  .sche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .course-sch{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .content .create{
+    width: 93%;
+    display: flex;
+    justify-content: end;
+    margin: 20px 0;
+  }
+  .content .create button{
+    background-color: #FFA628;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    width: fit-content;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .schedule{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .schedule .schedule-c{
+    width: 22%;
+    background-color: #000;
+    padding: 15px 10px;
+    color: #fff;
+    border-radius: 20px;
+  }
+  .schedule .schedule-c h3{
+    color: #FFA628;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    
+  }
+
+  .schedule .schedule-c h3::before{
+    content: '';
+    width: 40%;
+    height: 2px;
+    background-color: #FFA628;
+    position: absolute;
+    bottom: -10px;
+  }
+
+  .schedule .schedule-c h4{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .schedule .schedule-c .title{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #FFA628;
+  }
+  .schedule .schedule-c h4 span{
+    width: 43%;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .schedule .schedule-c h4 .span1{
+    width: 55%;
+  }
+
+
+
+/* Schedule ends here */
+
+
+
+/* Courses starts here */
+
+.courses{
+  width: 80%;
+  margin-left: auto;
+}
+ .top-flex{
+  width: 90%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.course-card{
+  margin-top: 30px;
+  background-color: #FFA628;
+  width: 90%;
+  padding: 38px 0;
+  border-radius: 20px;
+}
+
+.course-card h2{
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.course-card .course-list{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course-card .course-list span{
+  width: 30%;
+  background-color: #D9D9D9;
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  margin-bottom: 26px;
+}
+
+
+
+.course-card .add-courses{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.course-card .add-courses button{
+  background-color: #1A144A;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  width: fit-content;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-size: 15px;
+}
+/* Courses ends here */
+
+
+/* COURSE MODAL STARTS HERE */
+
+
+.classes{
+  display: flex;
+  justify-content: space-between;
+}
+.classes .class-days{
+  width: 45%;
+}
+
+.classes .class-time{
+  width: 45%;
+}
+
+.classes .class-time .time1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes .class-time .time1 .time-input{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+
+
+.classes .class-time .time1
+
+/* COURSE MODAL STARTS HERE */
+
+
+
+/* Students starts here */
+
+.count{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.count .count-left{
+  width: 50%;
+}
+.count .count-left p{
+  color: #5e5e5e;
+  font-size: 13px;
+}
+.count .count-left h3{
+  font-size: 16px;
+}
+
+/* Students ends here */
+
+
+/* Comment starts here */
+
+.comment-top{
+  width: 70%;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.comment-top .search-comment{
+  display: flex;
+  justify-content: space-around;
+}
+
+.comment-top .search-comment img{
+  width: 30px;
+  height: 30px;
+}
+
+.c-title{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.comment-box{
+  width: 95%;
+  background-color: #000;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.comment-box .comment-list{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  height: 25px;
+  align-items: center;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+
+}
+
+.comment-box .comment-list .details{
+  display: flex;
+  align-items: center;
+}
+
+.comment-box .comment-list .details h3{
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+.comment-box .comment-list .details p{
+  margin-left: 4px;
+  font-size: 15px;
+  color: hsl(0, 1%, 17%);
+}
+
+.add-comment{
+  margin-top: 20px;
+  background-color: #FFA628;
+}
+
+/* Comment ends here */
+
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1000px) {
+  .sign .sign-c {
+      width: 90%;
+      flex-direction: column;
+    }
+    .sign .sign-c .sign-img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    }
+    .sign .sign-c .sign-img img{
+    width: 90%;
+    }
+    .sign .sign-c .form-c {
+      width: 95%;
+      margin: auto;
+    }
+    
+    .sign .sign-c .form-c .forgot{
+      flex-direction: column;
+      width: 100%;
+      text-align: start;
+  }
+
+    .sign .sign-c .form-c .forgot span {
+      text-align: start;
+    }
+    .sign .sign-c .form-c .forgot .pw {
+      margin-left:20px;
+    }
+    /* FORGOT PASSWORD  */
+    .forgot-c {
+      flex-direction: column;
+  }
+    .forgot-c .f-img {
+      width: 90%;
+      margin: auto;
+    }
+    .forgot-c .f-form {
+    width: 100%;
+    margin: auto;
+  }
+    .forgot-c .f-form form {
+      width: 95%;
+     margin: auto;
+    }
+
+
+}
